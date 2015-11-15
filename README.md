@@ -1,2 +1,5 @@
 # Klicker
-Ruby On Rails App similar to Flicker and Instagram
+Ruby On Rails App similar to Flickr and Instagram
+
+- MVC
+- MySQL database
