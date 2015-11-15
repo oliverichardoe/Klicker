@@ -1,0 +1,9 @@
+<% @posts.each do |p| %>
+	<p>Posted by <%= p.name %> </p>
+	<%= image_tag p.image.url(:medium) %>
+	<div><%= p.description %></div>
+	<br>
+	<hr>
+	<br>
+
+<% end %>

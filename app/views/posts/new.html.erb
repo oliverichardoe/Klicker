@@ -1,0 +1,20 @@
+<h2>New Post</h2>
+<%- if current_user %>
+	<%= form_for @post, html: { multipart: true } do |f| %>
+		<p>
+		<%= f.label :image %>
+		<%= f.file_field :image %>
+		</p>
+		<br>
+		<%= f.label :description %>
+		<%= f.text_area :description %>
+		<br>
+		<%= f.submit %>
+	<% end %>
+<% else %>
+	<p>
+		You must be logged in to post 
+		<%= link_to "Log in", new_user_session_path %>
+	</p>
+	
+<% end %>
